@@ -1,0 +1,69 @@
+#top { 
+	
+	.logo {
+		max-width: 150px;
+	}
+
+	.display-flex {
+		align-items: baseline;
+	}
+
+	.logo, 
+	.busca {
+		flex-grow: 1;
+	}
+
+	.space {
+		padding: 20px 0;
+	}
+
+	nav {
+		flex-grow: 5;
+		margin: 0 20px;
+		
+		.menu {
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				display: inline-block;
+
+				&:hover {
+					position: relative;
+
+					.sub-menu {
+						position: absolute;
+						display: block;
+					}
+				}
+
+				.sub-menu {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.busca {
+		position: relative;
+		
+		input {
+			padding-left: 25px;
+		}
+
+		i {
+			position: absolute;
+			font-size: 20px;
+			z-index: 1;
+			left: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+#mid {
+	.card {
+		
+	}
+}

@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css"  href="css/_bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css"  href="css/_fontawesome/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css"  href="css/global.css" />
+		<link rel="stylesheet/less" type="text/css"  href="css/home.less" />
+	</head>
+	<body>
+		<section id="top">
+			<div class="container">
+				<div class="display-flex space">
+					<div class="logo">
+						<img class="logo" src="img/sem-imagem.png">
+					</div>
+					<nav>
+						<ul class="menu">
+							<li><a href="">Ajuda</a></li>
+							<li><a href="">Sobre a Empresa</a></li>
+							<li><a href="">Marcas</a>
+								<ul class="sub-menu">
+									<li><a href="">Chevrolet</a></li>
+									<li><a href="">Fiat</a></li>
+									<li><a href="">BMW</a></li>
+								</ul>
+							</li>
+							<li><a href="">Categorias</a>
+								<ul class="sub-menu">
+									<li><a href="">Autopeças</a></li>
+									<li><a href="">Pneus</a></li>
+									<li><a href="">Acessórios</a></li>
+								</ul>
+							</li>
+							<li><a href="">Anunciar</a></li>
+						</ul>
+					</nav>
+					<div class="busca">
+						<form>
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<input type="search" aria-label="Search...">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="mid">
+			<div class="container">
+				<div class="card">
+					<form class="cadastro">
+						<section>
+							<h2>Qual peça você esta anunciando?</h2>
+						</section>
+						<section>
+							<div>
+		            			<label for="nome">Nome da Peça:</label>
+								<input type="text" placeholder="Nome da peça..." required="required" name="nome" />
+							</div>
+
+							<div>
+		            			<label for="categoria">Categoria:</label>
+								<select name="categoria">
+									<option value="autopecas">Autopeças</option>
+									<option value="pneus">Pneus</option>
+									<option value="acessorios">Acessórios</option>
+								</select>
+							</div>
+
+							<div>
+		            			<label for="aplicacao">Aplicação:</label>
+								<input type="text" placeholder="Aplicação da peça..." required="required" name="aplicacao" />
+							</div>
+
+							<div>
+		            			<label for="marca">Marca:</label>
+								<input type="text" placeholder="Marca..." required="required" name="marca" />
+							</div>
+
+							<div>
+		            			<label for="linha">Linha:</label>
+								<input type="text" placeholder="Linha..." required="required" name="linha" />
+							</div>
+
+							<div>
+		            			<label for="sinonimo">Sinônimo:</label>
+								<input type="text" placeholder="Sinonimo..." required="required" name="sinonimo" />
+							</div>
+
+							<div>
+		            			<label for="pesoBruto">Peso Bruto:</label>
+								<input type="text" placeholder="Peso da peça..." required="required" name="pesoBruto" />
+							</div>
+
+							<div>
+		            			<label for="quantidade">Quantidade:</label>
+								<input type="text" placeholder="Quantidade..." required="required" name="quantidade" />
+							</div>
+
+							<div>
+		            			<label for="valor">Valor:</label>
+								<input type="text" placeholder="valor da peça..." required="required" name="valor" />
+							</div>
+						</section>
+						<section>
+							<button>Limpar</button>
+							<button>Continuar</button>
+						</section>
+					</form>
+				</div>
+			</div>
+		</section>
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+</html>
