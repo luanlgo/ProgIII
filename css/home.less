@@ -18,7 +18,7 @@
 	}
 
 	nav {
-		flex-grow: 5;
+		flex-grow: 8;
 		margin: 0 20px;
 		
 		.menu {
@@ -27,6 +27,10 @@
 
 			li {
 				display: inline-block;
+
+				a {
+					color: #000;
+				}
 
 				&:hover {
 					position: relative;
@@ -46,7 +50,8 @@
 
 	.busca {
 		position: relative;
-		
+		text-align: right;
+
 		input {
 			padding-left: 25px;
 		}
@@ -55,7 +60,7 @@
 			position: absolute;
 			font-size: 20px;
 			z-index: 1;
-			left: 5px;
+			left: 45px;
 			top: 50%;
 			transform: translateY(-50%);
 		}
@@ -64,6 +69,8 @@
 
 #mid {
 	.card {
-		
+		max-width: 60%;
+		display: block;
+		margin: 50px 50%;
 	}
 }
