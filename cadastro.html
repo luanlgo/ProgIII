@@ -13,60 +13,63 @@
         <!--FORMULÁRIO DE LOGIN-->
         <div id="login">
           <form method="post" action=""> 
-            <h1>Login</h1> 
-            <p> 
-              <label for="email_login">Seu e-mail</label>
-              <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
-            </p>
+            <h1>Recuperação de conta</h1>
+			 <p> 
+                            
+			<p>Insira o seu e-mail abaixo para receber maiores informações</p>
+			</p>
             
             <p> 
-              <label for="senha_login">Sua senha</label>
-              <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
-            </p>
-            
             <p> 
-              <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-              <label for="manterlogado">Manter-me logado</label>
+              <label for="email_login">E-mail</label> 
+              <input id="email_login" name="email_login" required="required" type="text"/>
             </p>
             
+           
             <p> 
-              <input type="submit" value="Logar" /> 
+              <input type="submit" value="Encaminhar e-mail" /> 
             </p>
             
-            <p class="link">
-              Ainda não tem conta?
-              <a href="#paracadastro">Cadastre-se</a>
-            </p>
-          </form>
+           </form>
         </div>
 
         <!--FORMULÁRIO DE CADASTRO-->
         <div id="cadastro">
           <form method="post" action=""> 
-            <h1>Cadastro</h1> 
+            <h1>OLX Parts</h1> 
+            <p> 
+                            
+			<p>Cadastre-se para ter acesso exclusivo de peças automotivas do Brasil inteiro!!</a>.</p>
+			<p>Mais de 10 milhões de opções de peças para o seu veículo! </a></p>
+			<p>Vários usuários já se juntaram a nós!! Cadastre-se já para vender e comprar as melhores peças pelos melhores preços!!</p>
+              </p>
             
             <p> 
-              <label for="nome_cad">Seu nome</label>
-              <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
+              <label for="email_cad">Usuário:</label>
+              <input id="email_cad" name="email_cad" required="required" type="email"/>
+			
+			 <p class="texto">  
+            <a> *A senha deve possuir de 6 a 8 caracteres </a>
             </p>
-            
-            <p> 
-              <label for="email_cad">Seu e-mail</label>
-              <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+				
+			<p> 
+              <label for="senha_cad">Senha:</label>
+              <input id="senha_cad" name="senha_cad" required="required" type="password"/>
+			  <p> 
+              <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+              <a class="texto3" for="manterlogado">Manter-me logado</a>
+			   <a class="texto2" href="#paralogin">Esqueceu a senha?</a>
             </p>
+			
+			  </p>
             
             <p> 
-              <label for="senha_cad">Sua senha</label>
-              <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234"/>
-            </p>
-            
-            <p> 
-              <input type="submit" value="Cadastrar"/> 
+              <input type="submit" value="Acessar"/> 
             </p>
             
             <p class="link">  
-              Já tem conta?
-              <a href="#paralogin"> Ir para Login </a>
+              
+              <a> Não possui uma conta? Cadastre-se já! </a>
             </p>
           </form>
         </div>
