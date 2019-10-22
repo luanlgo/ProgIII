@@ -1,9 +1,8 @@
-
-/* CSS reset */
+﻿/* CSS reset */
 *, *:before, *:after { 
   margin:0;
   padding:0;
-  font-family: Arial,sans-serif;
+  font-family: Helvetica;
 }
 
 body{
@@ -31,7 +30,7 @@ h1{
   font-size: 48px;
   color: #066a75;
   padding: 10px 0;
-  font-family: Arial,sans-serif;
+  font-family: margin-left: 55px;
   font-weight: bold;
   text-align: center;
   padding-bottom: 30px;
@@ -73,10 +72,12 @@ input {
 }
 
 input:not([type="checkbox"]){
-  width: 95%;
+  width: 300px;
+  display: inline-block;
   margin-top: 4px;
-  padding: 10px;    
+  padding: 3px;    
   border: 1px solid #b2b2b2;
+  
   
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -90,7 +91,7 @@ input:not([type="checkbox"]){
 
 /*estilo do botão submit */
 input[type="submit"]{
-  width: 100%!important;
+  width: auto!important;
   cursor: pointer;  
   background: #3d9db3;
   padding: 8px 5px;
@@ -99,6 +100,7 @@ input[type="submit"]{
   border: 1px solid #fff;   
   margin-bottom: 10px;  
   text-shadow: 0 1px 1px #333;
+  margin-left: 150px;
   
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -112,15 +114,16 @@ input[type="submit"]:hover{
 /*marcando os links para mudar de um formulário para outro */
 .link{
   position: absolute;
-  background: #e1eaeb;
+  /*background: #e1eaeb;*/
   color: #7f7c7c;
   left: 0px;
   height: 20px;
   width: 440px;
-  padding: 17px 30px 20px 30px;
+  padding: 10px 30px 20px 30px;
   font-size: 16px;
   text-align: right;
-  border-top: 1px solid #dbe5e8;
+ /* border-top: 20px solid #dbe5e8;*/
+  margin-left: -100px;
 
   -webkit-border-radius: 0 0  5px 5px;
   border-radius: 0 0  5px 5px;
@@ -131,7 +134,7 @@ input[type="submit"]:hover{
   padding: 6px;
   color: rgb(29, 162, 193);
   margin-left: 10px;
-  border: 1px solid #cbd518;
+  border: 0px solid #cbd518;
 
   -webkit-border-radius: 4px;
   border-radius: 4px;  
@@ -143,6 +146,26 @@ input[type="submit"]:hover{
   color: #39bfd7;
   background: #f7f7f7;
   border: 1px solid #4ab3c6;
+}
+.texto{
+	margin-left: 55px;
+	 font-family: Helvetica;
+	font-size: 10px;
+	padding: -300px;
+	
+	
+}
+
+.texto2{
+	font-family: Helvetica;
+	font-size: 15px;
+	margin-left: 45px;
+}
+
+.texto3{
+	font-family: Helvetica;
+	font-size: 15px;
+	margin-left: 35px;
 }
 
 /* estilos para para ambos os formulários */
