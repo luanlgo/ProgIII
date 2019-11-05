@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	var cadastroButton = $(document).find(".button-cadastro");
 
-	const HOME_URL = "file:///C:/Users/Luan%20Gomes/Desktop/Nova%20pasta/ProgIII/home.html";
+	const HOME_URL = "file:///C:/Users/lmilano/Desktop/ProgIII/ProgIII/home.html";
 
 	var form = $("#form");
 
@@ -66,6 +66,7 @@ $(document).ready(function() {
 			alert("Email já cadastrado");
 		} else {
 			if (isValid()) {
+				alert("cadastrado com sucesso");
 				window.localStorage.setItem(email, senha);
 			}
 		} 
