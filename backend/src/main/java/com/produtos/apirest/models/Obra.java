@@ -25,6 +25,27 @@ public class Obra implements Serializable {
     private String isbn;
     private String issn;
 
+    public Obra() {
+    }
+    
+    public Obra(String autor, String titulo) {
+        this.autor = autor;
+        this.titulo = titulo;
+    }
+
+    
+    
+    public Obra(String autor, String titulo, int ano, int edicao, String local, String editora, int paginas, String isbn, String issn) {
+        this(autor, titulo);
+        this.ano = ano;
+        this.edicao = edicao;
+        this.local = local;
+        this.editora = editora;
+        this.paginas = paginas;
+        this.isbn = isbn;
+        this.issn = issn;
+    }
+
     public long getId() {
         return id;
     }
