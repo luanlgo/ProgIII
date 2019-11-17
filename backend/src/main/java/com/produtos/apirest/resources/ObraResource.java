@@ -1,6 +1,6 @@
 package com.produtos.apirest.resources;
 
-import com.produtos.apirest.DefaultResponse;
+import com.produtos.apirest.config.DefaultResponse;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,7 @@ import com.produtos.apirest.models.Obra;
 
 import io.swagger.annotations.Api;
 import com.produtos.apirest.repository.ObraRepository;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,7 +31,8 @@ public class ObraResource {
     @Autowired
     private ObraRepository obraRepository;
 
-    @GetMapping
+    @ApiOperation(value = "Returns a list of all the books.")
+    @GetMapping(produces = "application/json")
     public List<Obra> getObras() {
         return obraRepository.findAll();
     }
