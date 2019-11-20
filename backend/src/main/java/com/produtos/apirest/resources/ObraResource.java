@@ -31,24 +31,27 @@ public class ObraResource {
     @Autowired
     private ObraRepository obraRepository;
 
-    @ApiOperation(value = "Returns a list of all the books.")
+    @ApiOperation(value = "Retorna uma lista de Obras.")
     @GetMapping(produces = "application/json")
     public List<Obra> getObras() {
         return obraRepository.findAll();
     }
 
     @GetMapping("/{id}")
+    @ApiOperation(value = "Retorna uma única obra.")
     public Obra getObra(@PathVariable("id") final long id) {
         return obraRepository.findById(id);
     }
 
     @PostMapping
+     @ApiOperation(value = "Insere uma obra")
     public Obra insertObra(final Obra obra) {
         return obraRepository.save(obra);
 
     }
 
     @PutMapping
+     @ApiOperation(value = "Atualiza uma obra")
     public Obra updateObra(@RequestBody Obra obra) {
         final Obra obraToPersist = obraRepository.findById(obra.getId());
 
@@ -60,6 +63,7 @@ public class ObraResource {
     }
 
     @DeleteMapping("/{id}")
+     @ApiOperation(value = "Deleta uma obra")
     public DefaultResponse deleteObra(@PathVariable("id") final long id) {
         Obra deleteById = obraRepository.deleteById(id);
 
