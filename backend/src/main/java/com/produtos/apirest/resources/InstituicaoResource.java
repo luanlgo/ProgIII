@@ -65,14 +65,13 @@ public class InstituicaoResource {
     @DeleteMapping("/{id}")
     @ApiOperation(value = "Deleta uma instituição")
     public DefaultResponse deleteInstituicao(@PathVariable("id") final long id) {
-        Instituicao deleteById = instituicaoRepository.deleteById(id);
+        try {
+            Instituicao deleteById = instituicaoRepository.deleteById(id);
 
-        if (deleteById != null) {
+        } catch (Exception ex) {
             return new DefaultResponse("Atenção! Instituição não foi deletada");
-
         }
-        return new DefaultResponse("Atenção! Instituição foi deletada");
+        return new DefaultResponse("Instituição foi deletada");
 
     }
-
 }

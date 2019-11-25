@@ -44,14 +44,14 @@ public class ObraResource {
     }
 
     @PostMapping
-     @ApiOperation(value = "Insere uma obra")
+    @ApiOperation(value = "Insere uma obra")
     public Obra insertObra(final Obra obra) {
         return obraRepository.save(obra);
 
     }
 
-    @PutMapping
-     @ApiOperation(value = "Atualiza uma obra")
+    @PutMapping("/{id}")
+    @ApiOperation(value = "Atualiza uma obra")
     public Obra updateObra(@RequestBody Obra obra) {
         final Obra obraToPersist = obraRepository.findById(obra.getId());
 
@@ -63,16 +63,14 @@ public class ObraResource {
     }
 
     @DeleteMapping("/{id}")
-     @ApiOperation(value = "Deleta uma obra")
+    @ApiOperation(value = "Deleta uma obra")
     public DefaultResponse deleteObra(@PathVariable("id") final long id) {
-        Obra deleteById = obraRepository.deleteById(id);
+        try {
+            Obra deleteById = obraRepository.deleteById(id);
 
-        if (deleteById != null) {
+        } catch (Exception ex) {
             return new DefaultResponse("Atenção! Obra não foi deletada");
-
         }
-        return new DefaultResponse("Atenção! Obra foi deletada");
-
+        return new DefaultResponse("Obra foi deletada");
     }
-
 }
