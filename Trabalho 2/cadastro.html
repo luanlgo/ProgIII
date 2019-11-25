@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css" />
+</head>
+
+<body>
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+
+        <div class="content">
+            <div id="cadastro">
+                <form id="form">
+                    <h1>OLX Parts</h1>
+
+                    <p>Cadastre-se para ter acesso exclusivo de peças automotivas do Brasil inteiro!!.</p>
+                    <p>Mais de 10 milhões de opções de peças para o seu veículo! </p>
+                    <p>Vários usuários já se juntaram a nós!! Cadastre-se já para vender e comprar as melhores peças pelos melhores preços!!</p>
+
+                    <div class="organizador">
+                        <div class="login">
+                            <label for="email_log">Usuário:</label>
+                            <input id="email_log" name="email_log" required="required" type="email" />
+
+                            <p class="texto">
+                                <a> *A senha deve possuir de 6 a 8 caracteres </a>
+                            </p>
+
+                            <label for="senha_log">Senha:</label>
+                            <input id="senha_log" name="senha_log" required="required" type="password" />
+                        </div>
+
+                        <div class="cadastro" style="display: none;">
+                          <label for="email_cad">Usuário:</label>
+                          <input id="email_cad" name="email_cad" type="email" />  
+
+                          <label for="senha_cad">Senha:</label>
+                          <input id="senha_cad" name="senha_cad" type="password" />
+                        </div>
+                    </div>
+
+                    <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                    <a class="texto3" for="manterlogado">Manter-me logado</a>
+                    <a class="texto2" href="#paralogin">Esqueceu a senha?</a>
+
+                    <p>
+                        <input class="button-cadastro" type="submit" value="Acessar" />
+                    </p>
+
+                    <p class="link">Não possui uma conta? <a class="label-cadastro"> Cadastre-se já! </a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/cadastro.js"></script>
+
+</html>

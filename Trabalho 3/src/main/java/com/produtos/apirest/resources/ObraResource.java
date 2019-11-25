@@ -52,7 +52,7 @@ public class ObraResource {
 
     @PutMapping("/{id}")
     @ApiOperation(value = "Atualiza uma obra")
-    public Obra updateObra(@RequestBody Obra obra) {
+    public Obra updateObra(@RequestBody Obra obra, @PathVariable long id) {
         final Obra obraToPersist = obraRepository.findById(obra.getId());
 
         if (obraToPersist == null) {
